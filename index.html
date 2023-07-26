@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Memory game</title>
+    <link rel="shortcut icon" href="images/fav2.png" type="image/png">  
+  
+    <link rel="stylesheet" href="stylefront.css">
+    
+</head>
+<body>
+    <div class="maincontainer">
+        <h2 class="heading">Welcome to the jungle!!</h2>
+        <p>Hey friends, happy to see you all again. Here is a set of information before you set to play</p>
+        <ul>
+            <li>You get to see a deck of cards on the screen</li>
+            <li>Cute animals are hidden under these cards</li>
+            <li>You can flip two cards at a time to see the hidden animal</li>
+            <li>If it is same animal, then you got a go and that two cards are removed</li>
+            <li>If not, then try to remember that animal under that respective card, because this is a MEMORY game!</li>
+            <li>Continue flipping of your choice until you figure out the same animal</li> 
+        </ul>
+        <p>Lets jump into the jungle <br><br>
+        Choose a level </p>
+           
+
+           <div class="level">
+            <button class = "button easybtn" >Easy</button>
+            <button class = "button mediumbtn" >Medium</button>
+            <button class = "button hardbtn" >Hard</button>
+            <button class = "button soundbtn" onclick="toggleplay()"> <img src="images/playing.png" height="35px"></button>
+           </div>
+    
+           <audio autoplay loop id="bgm">
+            <source src ="music/bgm2.mp3" type="audio/mp3">
+           </audio> 
+           
+    </div>   
+    <script src="script.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>

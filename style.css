@@ -1,0 +1,119 @@
+
+h2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(209, 255, 44);
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    letter-spacing: 5px;
+    
+   
+}
+.cardback{
+    
+    border-radius: 5%;
+    background-image: url("images/cardbg.webp");
+    background-size: 110%;
+    
+    border: black 2px;
+    }
+    
+body{
+    
+    background-image: url("images/bg.webp");
+   
+    background-size: 90%;
+}
+.game{
+    display: grid;
+    
+   gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+.easy{
+    grid-template-columns: repeat(3,130px);
+    grid-template-rows: repeat(2,170px);
+}
+.medium{
+    grid-template-columns: repeat(4,130px);
+    grid-template-rows: repeat(2,170px);
+}
+.hard{
+    grid-template-columns: repeat(6,130px);
+    grid-template-rows: repeat(2,170px);
+}
+
+#gameboard div{
+    height: 170px;
+    width: 130px;
+    border: solid rgba(0, 0, 0, 0.596) 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: rgb(33, 4, 53);
+    border-radius: 5%;
+}
+#gameboard div:hover{
+    cursor: pointer;
+}
+.won{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:cursive;
+   font-size: 3rem;
+    color:rgb(250 9 9);
+    font-weight: bolder;
+    width: 350px;
+    padding: auto;
+    margin: 150px auto; 
+    
+    border-radius: 10px;
+    background-image: linear-gradient(to left top, #05193783, #004d7a86, #00879371, #00bf7388, #a6eb1275);
+ 
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.level{
+    width: 600px;
+    margin: auto;
+    padding: 16px;
+    border-radius: 5%;
+    font-size: 20px;
+    align-items: center;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px #d8b2b2;
+    background-color: rgb(168, 41, 41);
+  }
+  
+  .button:hover {background-color: rgb(88, 10, 133)
+  }
+  
+  .button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
